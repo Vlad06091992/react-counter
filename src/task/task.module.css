@@ -1,0 +1,55 @@
+:root {
+    --color: #70e3fe;
+    --border: 2px solid var(--color);
+    --borderRadius: 6px;
+    --borderRadiusBtn: 4px;
+}
+
+.task {
+    font-style: initial;
+    font-weight: bold;
+    border: var(--border);
+    margin: auto;
+    font-size: 32px;
+    border-radius: var(--borderRadius);
+}
+
+.buttons {
+    display: flex;
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    padding: 3px 7px;
+    margin: 7px;
+}
+
+
+.button {
+    border: inherit;
+    margin: 3px 7px;
+    border-radius: var(--borderRadiusBtn);
+    background: var(--color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 0.4;
+    cursor: initial;
+}
+
+.counter {
+    margin: 7px;
+    border-radius: var(--borderRadiusBtn);
+    background: var(--color);
+    padding: 10px;
+    text-align: center;
+}
+
+.counter_limit {
+    color: red;
+}

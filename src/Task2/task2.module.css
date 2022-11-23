@@ -1,0 +1,129 @@
+:root {
+    --background: #282c34;
+    --color: #70e3fe;
+    --error:red;
+    --border: 2px solid var(--color);
+    --borderError: 2px solid var(--error);
+    --borderRadius: 6px;
+    --borderRadiusBtn: 4px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.task2 {
+    display: flex;
+    /* justify-content: center; */
+    margin: auto;
+
+}
+
+
+.text {
+    font-size: 32px;
+    margin: 5px;
+    color: var(--color);
+}
+
+.counterStylesLeft{
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin: 7px 7px auto 7px;
+    border: var(--border);
+    border-radius: var(--borderRadius);
+}
+
+.counter_inputs{
+    margin-top: 7px;
+}
+
+.input {
+    margin: 18px 5px;
+    display: block;
+    max-width: 50px;
+    border: var(--border);
+    border-radius: var(--borderRadiusBtn);
+}
+
+.input_error{
+    margin: 18px 5px;
+    display: block;
+    max-width: 50px;
+    background: #cd7f7f;
+    border: var(--borderError);
+    border-radius: var(--borderRadiusBtn);
+}
+
+.task {
+    margin:25px;
+    font-style: initial;
+    font-weight: bold;
+    border: var(--border);
+    font-size: 64px;
+    border-radius: var(--borderRadius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    border-radius: var(--borderRadius);
+    border: var(--border);
+    padding: 3px 7px;
+    margin: 7px;
+}
+
+
+.button {
+    border: inherit;
+    margin: 3px 7px;
+    border-radius: var(--borderRadiusBtn);
+    background: var(--color);
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 0.4;
+    cursor: initial;
+}
+
+.display {
+
+    color:var(--color);
+    min-width: 115px;
+    min-height: calc(105px - 18px);
+    margin: 7px;
+    border-radius: var(--borderRadiusBtn);
+    border: var(--border);
+    background: var(--background);
+    padding: 10px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+
+.message{
+    display: inline-block;
+    font-size: 16px;
+   vertical-align: super;
+    /*text-align: center;*/
+
+}
+
+
+
